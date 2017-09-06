@@ -1,0 +1,45 @@
+:host {
+    display: grid;
+    grid-template-columns: [c0-start] 
+        1fr [c0-end c1-start] 1fr [c1-end c2-start] 
+        1fr [c2-end c3-start] 1fr [c3-end c4-start] 
+        1fr [c4-end c5-start] 1fr [c5-end c6-start] 
+        1fr [c6-end];
+    grid-template-rows: [header-start] auto auto auto [header-end r0-start]
+        auto auto auto auto [r0-end r1-start]
+        auto auto auto auto [r1-end r2-start]
+        auto auto auto auto [r2-end r3-start]
+        auto auto auto auto [r3-end r4-start]
+        auto auto auto auto [r4-end r5-start]
+        auto auto auto auto [r5-end r6-start]
+        auto auto auto auto [r6-end];
+    border: 1px solid #aaa;
+}
+header {
+    display: contents;
+}
+header h1 {
+    grid-column: auto / span 7;
+    margin: 0;
+}
+header .weekday-titles {
+    display: contents;
+}
+.days {
+    display: contents;
+}
+/* Events */
+.event-container {
+    display: contents;
+}
+
+/* Collapse the borders */
+.day:nth-child(7n - 6) {
+    border-left: none;
+}
+.day {
+    min-height: 1em;
+    border: 1px solid #aaa;
+    border-right: none;
+    border-bottom: none;
+}

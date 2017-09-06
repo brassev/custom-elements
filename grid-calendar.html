@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>grid-calendar testing and examples</title>
+    <script async src="js/grid-calendar.js"></script>
+  </head>
+  <body>
+    <grid-calendar suppress-controls="select-date">
+      <div class="basic-event" start-date="08/27/17 11:00 am" end-date="08/27/17 12:00 pm">1-4</div>
+      <div class="basic-event" start-date="08/27/17 8:00 am" end-date="08/27/17 9:00 am">1-1</div>
+      <div class="basic-event" start-date="08/27/17 10:00 am" end-date="08/27/17 11:00 am">1-3</div>
+      <div class="basic-event" start-date="08/27/17 9:00 am" end-date="08/27/17 10:00 am">1-2</div>
+      <div class="basic-event" start-date="08/27/17 12:00 pm" end-date="08/27/17 1:00 pm">1-5</div>
+      
+      <div class="basic-event" start-date="09/14/17 12:00 pm" end-date="09/14/17 1:00 pm">1-5</div>
+      <div class="basic-event">No Slot!</div>
+    </grid-calendar>
+    <script type="text/javascript">
+        let gc = document.querySelector('grid-calendar')
+    </script>
+  </body>
+</html>
