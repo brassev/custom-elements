@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>basic-calendar</title>
+    <script async src="js/basic-calendar.js"></script>
+  </head>
+  <body>
+    <basic-calendar data-suppress-controls="select-date">
+        <div class="basic-event" start-date="09/27/17  8:00 am" end-date="09/27/17  9:00 am">09/27 - 1</div>
+        <div class="basic-event" start-date="09/27/17  9:00 am" end-date="09/27/17 10:00 am">09/27 - 2</div>
+        <div class="basic-event" start-date="09/27/17 10:00 am" end-date="09/27/17 11:00 am">09/27 - 3</div>
+        <div class="basic-event" start-date="09/27/17 11:00 am" end-date="09/27/17 12:00 pm">09/27 - 4</div>
+        <div class="basic-event" start-date="09/27/17 12:00 pm" end-date="09/27/17  1:00 pm">09/27 - 5</div>
+        
+        <div class="basic-event" start-date="09/14/17 12:00 pm" end-date="09/14/17 1:00 pm">09/14 - 1</div>
+        <div class="basic-event" start-date="09/14/17 12:00 pm" end-date="09/15/17 1:00 pm">09/14 - 09/15</div>
+        <div class="basic-event">No Slot!</div>
+    </basic-calendar>
+    <script>
+      const bc = document.querySelector('basic-calendar')
+    </script>
+    <style>
+.basic-event {
+  background-color: limegreen;
+  color: #fff;
+}
+    </style>
+  </body>
+</html>
+

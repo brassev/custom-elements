@@ -1,0 +1,50 @@
+td, th {
+    border: 1px solid;
+    border-color: #aaa;
+    color: #333;
+    z-index: 1;
+}
+th {
+    padding: 5px;
+}
+td {
+    vertical-align: top;
+}
+table {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width:  100%;
+}
+.selected {
+    font-weight: bold;
+    background-color: #eee;
+}
+.catch-all * {
+    display: none;
+}
+td:not(.in-month) {
+    color: #ccc;
+}
+.today {
+    color: rebeccapurple;
+    border: 1.5px solid rebeccapurple;
+}
+table, h1 {
+    font-family: sans-serif;
+}
+h1 {
+    margin: 0;
+}
+.event-list {
+    position: relative;
+}
+.spacer {
+    min-height: 1em;
+}
+.date {
+    padding: 5px;
+}
+slot {
+    position: relative;
+    z-index: 5;
+}
